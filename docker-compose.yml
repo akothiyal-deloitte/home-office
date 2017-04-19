@@ -1,0 +1,10 @@
+fee-service:
+  image: home-office/fee-service:0.1.0
+  container_name: fee-service
+  ports:
+    - "8780:8780"
+circumstance-service:
+  image: home-office/circumstance-service:0.1.0
+  container_name: circumstance-service
+  ports:
+    - "8980:8980"

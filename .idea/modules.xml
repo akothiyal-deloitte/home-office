@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/circumstance-service/circumstance-service.iml" filepath="$PROJECT_DIR$/.idea/modules/circumstance-service/circumstance-service.iml" group="circumstance-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/circumstance-service/circumstance-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/circumstance-service/circumstance-service_main.iml" group="circumstance-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/circumstance-service/circumstance-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/circumstance-service/circumstance-service_test.iml" group="circumstance-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fee-service/fee-service.iml" filepath="$PROJECT_DIR$/.idea/modules/fee-service/fee-service.iml" group="fee-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fee-service/fee-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/fee-service/fee-service_main.iml" group="fee-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fee-service/fee-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/fee-service/fee-service_test.iml" group="fee-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home-office.iml" filepath="$PROJECT_DIR$/.idea/modules/home-office.iml" />
+    </modules>
+  </component>
+</project>
