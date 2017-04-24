@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gateway-ingress
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  backend:
+    serviceName: default-http-backend
+    servicePort: 80
+  rules:
+  - host: micro.all
+    http:
+      paths:
+      - path: /fee
+        backend:
+          serviceName: fee-service
+          servicePort: 8780
+      - path: /circumstance
+        backend:
+          serviceName: circumstance-service
+          servicePort: 8980

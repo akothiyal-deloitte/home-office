@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: circumstance-service-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: circumstance-service
+    spec:
+      containers:
+      - name: circumstance-service
+        image: home-office/circumstance-service:0.1.0
+        ports:
+        - containerPort: 8980
