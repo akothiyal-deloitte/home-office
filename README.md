@@ -33,8 +33,12 @@ sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machi
 7. kubectl get pods
 8. kubectl get deployments
 9. kubectl get services
+  1. minikube service fee-service (testing exposed service)
+  2. minikube service circumstance-service (testing exposed service)
 10. kubectl scale --replicas=3 -f home-office/fee-service/fee-deployment.yml
 11. kubectl create -f ingress.yml
+  1. Edit host file to add [cluster-ip] micro.all. Save and Close.
+  2. Hit following urls to test - http://micro.all/circumstance/circumstance and http://micro.all/fee/fees
 12. kubectl delete -f ingress.yml
 13. kubectl delete -f home-office/fee-service/fee-deployment.yml
 14. kubectl delete -f home-office/fee-service/fee-service.yml
