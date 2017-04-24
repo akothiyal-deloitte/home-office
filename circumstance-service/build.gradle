@@ -31,7 +31,11 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile group: 'info.cukes', name: 'cucumber-java', version: '1.2.5'
+    compile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+
+    testCompile 'junit:junit:4.12'
+    //testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
 task buildDocker(type: Docker, dependsOn: build) {
