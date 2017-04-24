@@ -1,6 +1,6 @@
 ## Sample Application demo for Spring Boot , Docker and Kubernetes
 
-##Pre-requisites:
+## Pre-requisites:
 1. Install Docker on your machine
 2. Install Gradle
 3. Install Brew for MacOS
@@ -13,7 +13,7 @@ sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docke
 sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
   3. brew install kubectl
 
-##Steps to install and run the application
+## Steps to install and run the application
 1. Clone the repository (git clone https://github.com/akothiyal-deloitte/home-office.git)
 2. Change directory to home-office on terminal and run command "gradle clean build buildDocker". This should create docker images locally. Check by using command- "docker images"
 ## if using docker to manage containers
@@ -22,7 +22,7 @@ sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machi
 5. To terminate the application use "docker-compose down" command from another terminal tab.
 
 
-##Commands used during Kubernetes demo from the root project folder /home-office (if using kubernetes to manage deployments)
+## Commands used during Kubernetes demo from the root project folder /home-office (if using kubernetes to manage deployments)
 1. minikube start --vm-driver=xhyve
 2. eval $(minikube docker-env) (switch to minikube provided docker version to allow local docker builds on vm)
   1. gradle clean build buildDocker
