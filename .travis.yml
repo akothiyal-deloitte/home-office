@@ -1,0 +1,5 @@
+language : java
+jdk :
+  - oraclejdk8
+notifications:
+  slack: ddigitaluk:ZIKoa3w0BVsuWWiQ76HuxA48
