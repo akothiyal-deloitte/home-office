@@ -45,3 +45,11 @@ sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machi
 15. kubectl delete -f home-office/circumstance-service/circumstance-deployment.yml
 16. kubectl delete -f home-office/circumstance-service/circumstance-service.yml
 17. minikube stop
+
+## Setting up Travis CI
+
+1. Ensure that you have a GitHub account registered on https://travis-ci.org/ , and that this repo is part of your account.
+2. Follow the instructions on the Travis CI website to link this repo onto the Travis CI dashboard (Click on your username, then on accounts, then select this repo. If it does not appear in the list, click "sync account" )
+3. In order to trigger builds, a .travis.yml file needs to be created, and added to the root directory. This yaml file triggers and configures travis to build your code when it is pushed up to GitHub, or when a PR is raised for it. 
+4. Settings for the yaml file can be found here : https://docs.travis-ci.com/
+
