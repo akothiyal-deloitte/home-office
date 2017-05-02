@@ -13,8 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CircumstanceController {
 
+    private CircumstanceService circumstanceService;
+
     @Autowired
-    CircumstanceService circumstanceService;
+    public CircumstanceController(CircumstanceService circumstanceService) {
+        this.circumstanceService = circumstanceService;
+    }
 
     @RequestMapping(path = "/circumstance", method =  RequestMethod.GET)
     public Circumstance getFees(){

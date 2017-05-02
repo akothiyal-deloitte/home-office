@@ -13,12 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FeeController {
 
+    private FeeService feeService;
+
     @Autowired
-    FeeService feeService;
+    public FeeController(FeeService feeService) {
+        this.feeService = feeService;
+    }
 
     @RequestMapping(path = "/fees", method =  RequestMethod.GET)
     public Fee getFees(){
-        return feeService.getFees();
+        return feeService.getFees(1);
     }
 
 }

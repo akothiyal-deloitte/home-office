@@ -10,9 +10,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class FeeServiceImpl implements FeeService {
 
+    private static final Double STANDARD_FEE = 12.32;
+
     @Override
-    public Fee getFees() {
-        return new Fee(12.32, "GBP");
+    public Fee getFees(int multiplier) {
+        Double feeAmount = STANDARD_FEE * multiplier;
+        return new Fee(feeAmount, "GBP");
     }
 
 }
