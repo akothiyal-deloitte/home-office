@@ -7,6 +7,6 @@ import com.deloitte.ho.application.model.Fee;
  */
 public interface FeeService {
 
-    Fee getFees();
+    Fee getFees(int multiplier);
 
 }
